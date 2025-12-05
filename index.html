@@ -73,7 +73,7 @@
     <h3 id="Abstract">Abstract</h3>
     <p class="ex1">
         <pre>
-------------------
+Hydraulic systems, which use fluid as the working medium to transfer energy and control machines, are widely used in many areas like mechanical production, construction equipment, and aerospace. This is because they have great advantages—they can deliver high power relative to their size, respond quickly, and control movements precisely. Taking basic hydraulic systems as the research focus, this paper explains their key working principles clearly, based on basic knowledge of fluid mechanics and thermodynamics. It details the parts that make up these systems (including power suppliers, moving parts, control parts, and auxiliary parts) and what each part does. It also analyzes how these systems perform when they’re running steadily or changing dynamically, and shows their practical operating features through typical engineering use cases. Finally, this paper summarizes the main technical strengths of basic hydraulic systems and the limitations they have in real applications.
         </pre>
     </p>
 
@@ -81,7 +81,7 @@
     <h3 id="Introduction">Introduction</h3>
     <p class="ex1">
         <pre id="Introduction_InText">
-test test test test
+In modern industrial and engineering technology, efficiently transferring energy and controlling machines precisely are key needs for ensuring equipment works well. Hydraulic systems use hydraulic oil as the working medium and rely on Pascal’s principle to convert pressure energy into mechanical energy (and vice versa). They can handle heavy loads and operate smoothly. Compared with mechanical or electrical transmission systems, they’re much more efficient in scenes that require heavy lifting or precise control. From machine tools in industrial production to hydraulic arms on construction excavators, and the landing gear control systems of airplanes, basic hydraulic systems are widely used in many areas—including manufacturing, daily life, and military applications.
         </pre>
     </p>
 
@@ -89,17 +89,89 @@ test test test test
     <h3 id="Analysis">Analysis</h3>
     <p class="ex1">
         <pre id="Analysis_InText">
-test test test test
+The working principle of basic hydraulic systems is essentially based on Pascal’s principle: in a stationary liquid, any change in pressure at one point is transmitted equally to all parts of the liquid—regardless of the container’s shape. In a hydraulic system, a power part (such as a hydraulic pump) applies pressure to the hydraulic oil. This pressure energy is then transferred through sealed hydraulic pipes to an actuator (like a hydraulic cylinder or motor), which drives the actuator to move in a straight line or rotate. This process completes the transfer and conversion of energy.
+Pascal’s principle can be expressed mathematically as:p = F/A
+(Where:p = liquid pressure,F = applied force,A = the area over which the force acts)
+This relationship determines how hydraulic systems adjust force and speed: When pressure remains constant, the output force of the actuator is proportional to the area it acts on. Meanwhile, the movement speed is proportional to the fluid flow rate and inversely proportional to the acting area.
+
+The operating performance of hydraulic systems is closely related to fluid mechanics characteristics. The viscosity of hydraulic oil is a key factor affecting the system’s fluidity and sealing: if the viscosity is too high, it increases flow resistance and leads to greater energy loss; if it’s too low, it reduces sealing effectiveness and raises the risk of oil leakage. In addition, fluid properties like inertia and compressibility can impact the system’s response speed. For scenarios requiring precise control, these factors need to be adjusted through optimized system design.
+Flow patterns also affect system operation: In laminar flow, the fluid moves smoothly with less energy loss, making it suitable for situations where stability is crucial. In turbulent flow, the fluid mixes intensely, resulting in more energy loss but better heat transfer.(A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 14-24) The flow pattern must be properly controlled based on the system’s specific needs.
+
+The core power part of a basic hydraulic system is the hydraulic pump, whose main job is to convert the mechanical energy from a prime mover (like an electric motor) into pressure energy in the hydraulic oil. The performance of the hydraulic pump directly determines the system’s pressure level and fluid flow output.
+Hydraulic motors (or actuators) convert the pressure energy of the hydraulic oil back into mechanical energy to drive the load. Pressure control valves adjust the system’s pressure to prevent overloading, while flow control valves regulate how fluid is distributed.
+In addition, there are auxiliary parts such as oil tanks, pipes, filters, and coolers. These parts don’t directly take part in energy conversion, but they are essential for keeping the system running stably and effectively.(A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 37-39)
+
+Despite their significant advantages, basic hydraulic systems still have some limitations: they are relatively expensive, require high precision in component manufacturing, demand substantial maintenance costs, and their components are prone to corrosion or damage due to environmental factors.(A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 33-34)The following charts illustrate that hydraulic technology remains one of the indispensable technologies in global engineering and manufacturing, with its adoption rate increasing year by year.
+
+To sum up, basic hydraulic systems operate on Pascal’s principle and achieve efficient energy transfer through the coordinated work of various key components. They offer distinct advantages such as high power density, precise control, and adaptability to heavy-load conditions, making them an indispensable core technology in modern engineering. However, system performance is influenced by multiple factors including component quality and operating conditions—rational system design and regular maintenance are crucial to ensuring stable operation. Their wide application across construction machinery, industrial production, transportation, and other fields fully demonstrates the significant engineering value of basic hydraulic systems(A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 30-31).
         </pre>
     </p>
 
     
-    <h3 id="Charts">Charts</h3>
-    <p class="ex1">
+    
     <pre id="Charts_InText">
    
-        
-      test test test test
+     <h3 id="Charts">Charts</h3>
+<p class="ex1">
+    The following charts illustrate that hydraulic technology remains one of the indispensable technologies in global engineering and manufacturing, with its adoption rate increasing year by year.
+</p>
+<div class="ex1" style="width: 1000px; height: 600px; margin: 20px 0;">
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawHydraulicChart);
+
+    function drawHydraulicChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Years', 'Hydraulic Cylinder (10k units)', 'Hydraulic Pump (10k units)', 'Total Manufacturing Volume (10k units)'],
+        ['2015', 1876.1, 680, 2556.1],
+        ['2016', 1998.6, 750, 2748.6],
+        ['2017', 2138.6, 880, 3018.6],
+        ['2018', 2289.1, 1302.4, 3591.5],
+        ['2019', 2422.2, 1150, 3572.2],
+        ['2020', 2397.7, 1180, 3577.7],
+        ['2021', 2473.6, 1230, 3703.6],
+        ['2022', 2523.1, 1190, 3713.1],
+        ['2023', 2500.0, 1160, 3660.0],
+        ['2024', 2449.0, 1140, 3589.0]
+      ]);
+
+      var options = {
+        title: 'Line Chart of Global Core Hydraulic Equipment Manufacturing Volume (2015 - 2024)',
+        titleTextStyle: { fontName: 'Arial', fontSize: 16, bold: true },
+        legend: { position: 'top', textStyle: { fontName: 'Arial', fontSize: 12 } },
+        axes: {
+          x: {
+            title: 'Years',
+            titleTextStyle: { fontName: 'Arial', fontSize: 14, bold: true },
+            labelTextStyle: { fontName: 'Arial', fontSize: 11 }
+          },
+          y: {
+            title: 'Manufacturing Volume (in ten thousands units)',
+            titleTextStyle: { fontName: 'Arial', fontSize: 14, bold: true },
+            labelTextStyle: { fontName: 'Arial', fontSize: 11 },
+            minValue: 0,
+            maxValue: 4000
+          }
+        },
+        gridlines: { color: '#e0e0e0' },
+        backgroundColor: '#ffffff',
+        lineWidth: 3,
+        pointSize: 5,
+        pointShape: 'circle',
+        animation: { duration: 1000, easing: 'inAndOut' }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('hydraulicChartContainer'));
+      chart.draw(data, options);
+    }
+  </script>
+  <div id="hydraulicChartContainer" style="width: 800; height: 450;"></div>
+</div>
+
+<p class="ex1" style="font-size: 12px; color: #666;">
+  Data Source: Guiyang Guoyu Machinery Technology Co., Ltd. Industry Analysis, NMedia Cross-border Data Community, Market Growth Reports. 
+  Note: The data covers core hydraulic equipment (hydraulic cylinders and hydraulic pumps), and the statistical unit is ten thousands units.
+</p>
       </pre>
     </p>
 
@@ -107,7 +179,10 @@ test test test test
     <h3 id="References">References</h3>
     <p class="ex1">
         <pre>
---------------------------------------
+1.  (A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 14-24)
+2.  (A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 37-39)
+3.  (A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 33-34)
+4.  (A.K.Gupta/S.K.Arora/J.R.Westcott.Industrial Automation and Robotics.2017.PP 30-31) 
         </pre>
     </p>
 
@@ -214,5 +289,4 @@ test test test test
 </script>
 </body>
 </html>
-
 
